@@ -3,5 +3,11 @@
   "extends": [
     "config:base"
   ],
-  "reviewers": ["halvorot"]
+  "reviewers": ["halvorot"],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    }
+  ]
 }
